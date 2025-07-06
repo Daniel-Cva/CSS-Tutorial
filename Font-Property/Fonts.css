@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <style>
+        body{
+            height: 800px;
+            width: 800px;
+            background-color: lightskyblue;
+            font-family: sans-serif;
+        }
+        div{
+            font: 20px bold Arial;
+            color:yellow;
+            font-style: italic;
+        }
+        h1{
+            text-align: center;
+            color: darkblue;
+            background-color:lightblue
+        }
+        h2{
+            text-align: center;
+            color: darkblue;
+            background-color:lightblue;
+            font-variant: small-caps;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+           
+        }
+        span{
+            font: 20px bold Arial;
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>hello every one this is the example text for practicing.<div> Arial, Helvetica,hello every one this is the example text for practicing. </div>hello every one this is the example text for practicing. <span>hello every one this is the example text for practicing. </span>hello every one this is the example text for practicing.</p>
+    <h2>Hello Again</h2>
+    <p>hello every one this is the example text for practicing. hello every one this is the example text for practicing. hello every one this is the example text for practicing. hello every one this is the example text for practicing. hello every one this is the example text for practicing. hello every one this is the example text for practicing.</p>
+    <p>hello every one this is the example text for practicing.<div> Arial, Helvetica,hello every one this is the example text for practicing. </div>hello every one this is the example text for practicing. <span>hello every one this is the example text for practicing. </span>hello every one this is the example text for practicing.</p>
+    <p>hello every one this is the example text for practicing.<div> Arial, Helvetica,hello every one this is the example text for practicing. </div>hello every one this is the example text for practicing. <span>hello every one this is the example text for practicing. </span>hello every one this is the example text for practicing.</p>
+    <p>hello every one this is the example text for practicing.<div> Arial, Helvetica,hello every one this is the example text for practicing. </div>hello every one this is the example text for practicing. <span>hello every one this is the example text for practicing. </span>hello every one this is the example text for practicing.</p>
+</body>
+</html>
