@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating table using HTML</title>
+    <style>
+        caption{
+            font-weight: bold;
+            color: white;
+            background: lightskyblue;
+        }
+        td{
+            text-align: center;
+            padding:10px;
+            border:1px solid lightskyblue
+
+        }
+        thead{
+            font-weight: bold;
+            color:white;
+            background: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            student details tables.
+        </caption>
+        <thead>
+            
+                <tr>
+                <td>S.No</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Department</td>
+                <td>City</td>
+                </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Dani</td>
+                <td>20</td>
+                <td>CSE</td>
+                <td>Mayiladuthurai</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Jesus</td>
+                <td>20</td>
+                <td>CSE</td>
+                <td>Mayiladuthurai</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Cva</td>
+                <td>20</td>
+                <td>CSE</td>
+                <td>Mayiladuthurai</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan ="4">Total Students
+                </td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
