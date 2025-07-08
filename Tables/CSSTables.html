@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables using CSS Display</title>
+    <style>
+
+        /****************************************************
+        *Create Table Using CSS Display Property
+        *Student Details Table
+        *Table for learning purpose.
+        ******************************************************/
+        .table{
+            display: table;
+            text-align: center;
+        }
+        .header{
+            display:table-header-group;
+            background: orangered;
+            color: white;
+            font-weight: bold; 
+            text-align: center;
+            padding:5px;
+        }
+        .row{
+            display:table-row;
+        }
+        .col{
+            display:table-cell;
+            border: 1px solid orangered;
+            padding:10px;
+        }
+        .footer{
+            display:table-footer-group;
+            font-weight:bold;
+        }
+        .caption{
+            display:table-caption;
+            text-align: center;
+            font-weight:bold;
+            color: orangered;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="caption">student details tables.</div>
+        <div class="header">
+            <div class="row">
+                <div class="col">S.No</div>
+                <div class="col">Name</div>
+                <div class="col">Age</div>
+                <div class="col">Department</div>
+                <div class="col">City</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">01</div>
+            <div class="col">Dani</div>
+            <div class="col">20</div>
+            <div class="col">CSE</div>
+            <div class="col">Mayiladuthurai</div>
+        </div>
+        <div class="row">
+            <div class="col">02</div>
+            <div class="col">Jesus</div>
+            <div class="col">20</div>
+            <div class="col">CSE</div>
+            <div class="col">Mayiladuthurai</div>
+        </div>
+        <div class="row">
+            <div class="col">03</div>
+            <div class="col">Cva</div>
+            <div class="col">20</div>
+            <div class="col">CSE</div>
+            <div class="col">Mayiladuthurai</div>
+        </div>
+    
+        <div class="footer">
+            <div class="row">
+                <div class="col">Total Students</div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
