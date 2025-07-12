@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+    /* Descendant */
+        ul li{
+            color: blue;
+            font-size: 20px;
+        }
+    /* Direct Child */
+        .child1 > span{
+            color: green;
+            font-size: 18px;
+        }
+    /* Adjacent Sibling */
+        .child2 + p{
+            color: red;
+            font-size: 22px;
+        }
+    
+    /* General Sibling  */
+        .child3 ~ .child4{
+            color: purple;
+            font-size: 24px;
+        }
+        .grand.child p{
+            color: orange;
+            font-size: 16px;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- Cominator Selector:
+    Descendant
+    Direct Child
+    Adjacent Sibling
+    General Sibling -->
+    <ul>
+        <li>Descendant Selector: Selects all elements inside another element.</li>
+        <li>Direct Child Selector: Selects elements that are direct children of another element.</li>
+        <li>Adjacent Sibling Selector: Selects an element right after another element.</li>
+        <li>General Sibling Selector: Selects all siblings of an element.</li>
+    </ul>
+    <div class="parent">
+        
+        <div class="child1">Child 1
+            <span class="grand child">grand child
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quis?</p>
+            </span>
+            <span class="grand child">grand child
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, temporibus?</p>
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae qui et exercitationem. Expedita ullam laudantium saepe assumenda officia sed.</p>
+        </div>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima repellendus, praesentium unde non tempora aperiam pariatur ullam expedita, eum vitae! Sint vero magnam voluptatem at quae nisi laboriosam non!</p>
+        <div class="child2">Child 2
+            <span class="grand child">grand child
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quis?</p>
+            </span>
+            <span class="grand child">grand child
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, temporibus?</p>
+            </span>
+        </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis facilis aperiam molestiae deleniti laborum assumenda reprehenderit ipsa ad voluptas aut voluptatibus cupiditate nam qui blanditiis velit, ab corporis. Ullam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima repellendus, praesentium unde non tempora aperiam pariatur ullam expedita, eum vitae! Sint vero magnam voluptatem at quae nisi laboriosam non!</p>
+        <div class="child3">Child 3
+            <span class="grand child">grand child
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quis?</p>
+            </span>
+            <span class="grand child">grand child
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, temporibus?</p>
+            </span>
+        </div>
+        <div class="child4">Child 4
+            <span class="grand child">grand child
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quis?</p>
+            </span>
+            <span class="grand child">grand child
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, temporibus?</p>
+            </span>
+        </div>
+    </div>  
+</body>
+</html>
