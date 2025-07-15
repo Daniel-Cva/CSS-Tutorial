@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu bar</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       nav{
+        margin-top: 300px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+       }
+        nav ul{
+            display: flex;
+            transform: skew(-25deg);
+        }
+        nav ul li{
+            min-width: 12vw;
+            
+            font-size: 20px;
+            
+            border: 1px solid black;
+            display: inline;
+            padding: 10px;
+            list-style: none;
+            justify-content: center;
+            font-variant: small-caps;
+            text-align: center;
+            
+           
+        }
+        
+        li:first-child{
+            border-radius: 7px 0 0 7px;
+        }
+        li:last-child{
+            border-radius: 0 7px 7px 0;
+        }
+        a{
+            
+            text-decoration: none;
+            color: blue;
+            transform: skew(25deg);
+        }
+        li:hover ,a:hover{
+            color:white;
+            background-color: lightseagreen;
+        }
+        li:active ,a:active{
+            color:black;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
