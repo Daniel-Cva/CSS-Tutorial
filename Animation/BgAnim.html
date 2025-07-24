@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Background</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background-size:400px 400px;
+            background: #2A7B9B;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+            animation: BG 2s linear;
+        }
+        @keyframes BG{
+            0%{ background-position:0%; }
+            50%{ background-position:100%; }
+            100%{ background-position:0%; }
+            }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
