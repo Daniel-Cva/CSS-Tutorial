@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Animation</title>
+    <style>
+       
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+           
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(70deg, #34eef1, #34fd2d,#f134fd ,#fdfd34, #3b2dfd);
+            background-size: 400% 400%;
+            background-repeat: no-repeat;
+            animation: animateBG 3s infinite ease-in-out;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .card{
+            display: flex;
+            min-height: 250px;
+            min-width: 300px;
+            width: 50vw;
+            height: 40vh;
+            color: black;
+            background-color: white;
+            border-radius:10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0.1);
+            align-items: center;
+            gap: 6%;
+        }
+        .image img{
+            margin-left: 20%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            height: 35vh;
+            width:20vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content h1,p{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        #Link{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media screen and (max-width: 550px) {
+            .card{
+                
+                box-sizing: border-box;
+                flex-direction: column;
+                min-height: 300px;
+                min-width: 200px;
+                width: 80vw;
+                height: 90vh;
+                gap: 3%;
+            }
+            .image img{
+                margin-top: 10%;
+                margin-left: 0%;
+                height: 35vh;
+                width: 60vw;
+            }
+            .content{
+                text-align: center;
+                
+            }
+            
+        }
+    
+        @keyframes animateBG {
+            0%{
+                background-position: 0%;
+            }
+            50%{
+                background-position: 100%;
+            }
+            100%{
+                background-position: 0%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="Dani.jpeg" alt="Profile">
+        </div>
+        <div class="content">
+            <h1>Daniel Jabaraj</h1>
+            <p>Microsoft Student Ambassador</p>
+            <p id="Link"><a href="mailto:danieljabaraj218@gmail.com"><img src="Email.jpeg" alt=""></a> <a href="tel:8778752448"><img src="Wa.jpeg" alt=""></a> <a href=""><img src="LinkedIn.jpeg" alt=""></a> <a href=""><img src="Github.jpeg" alt=""></a></p>
+            <div class="contact">
+
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
